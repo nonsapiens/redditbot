@@ -1,0 +1,13 @@
+{
+    "name": "yomo/redditbot",
+    "description": "Laravel package for developing Reddit bots",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Stuart Steedman",
+            "email": "stuart@steedman.co.za"
+        }
+    ],
+    "require": {}
+}
