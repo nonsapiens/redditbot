@@ -9,5 +9,21 @@
             "email": "stuart@steedman.co.za"
         }
     ],
-    "require": {}
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Redditbot\\Providers\\RedditbotServiceProvider"
+            ],
+            "aliases": {
+                "Reddit" : "Redditbot\\Facades\\Reddit"
+            }
+        },
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
 }
