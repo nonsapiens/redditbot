@@ -69,6 +69,12 @@ $comments->sinceLastCheck()->each(function($comment){
 });
 ```
 
+There is also a Facade available, with an example shown below:
+
+```php
+   $firstNewComment = Reddit::fetchComments('jimny')->sinceLastCheck()->first();
+```
+
 ## About the author
 
 [**Stuart Steedman**](https://www.linkedin.com/in/stuart-steedman-b612a537/) is the head of development at [Yonder Media](http://www.yonder.co.za), a South African digital media agency operating out of Pretoria.
