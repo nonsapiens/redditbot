@@ -16,7 +16,7 @@ class RedditbotServiceProvider extends ServiceProvider
     {
 		$this->publishes([
 			                 realpath( dirname( __FILE__ ) . '/../config/redditbot.php' )        => config_path( 'redditbot.php' ),
-		                 ]);
+		                 ], 'redditbot');
 
 	    $this->mergeConfigFrom( realpath( dirname( __FILE__ ) . '/../config/redditbot.php' ), 'redditbot' );
     }
