@@ -26,7 +26,7 @@ Redditbot\Providers\RedditbotServiceProvider::class
 
 Then execute:
 ```bash
-php artisan vendor:publish --tag=yomo.realaddress
+php artisan vendor:publish --tag=redditbot
 ```
 
 ## Usage
@@ -57,7 +57,7 @@ An example below shows how the bot replies to any instance of a specific phrase,
 
 ```php
 $reddit = new Reddit();
-$comments = $reddit->fetchComments('sheiseverywhere');
+$comments = $reddit->fetchComments('jimny');
 
 $comments->sinceLastCheck()->each(function($comment){
 
@@ -72,4 +72,4 @@ $comments->sinceLastCheck()->each(function($comment){
 ## About the author
 
 [**Stuart Steedman**](https://www.linkedin.com/in/stuart-steedman-b612a537/) is the head of development at [Yonder Media](http://www.yonder.co.za), a South African digital media agency operating out of Pretoria.
-He specialises in PHP and Laravel development, and is a speaker at tech and development related events.
+He specialises in PHP and Laravel development, and is a speaker at tech and development related conferences.
