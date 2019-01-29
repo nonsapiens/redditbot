@@ -28,6 +28,13 @@ class Reddit extends RedditApiHandler
 	}
 
 
+	/**
+	 * @param string $subreddit The subreddit to retrieve comments from
+	 * @param string $sortBy    Defaults to 'new', but allows 'rising', 'controversial' and 'top'
+	 * @param int    $limit     How many comments to pull
+	 *
+	 * @return \Redditbot\Responses\Comments
+	 */
 	public function fetchComments ( $subreddit, $sortBy = 'new', $limit = 100 )
 	{
 
